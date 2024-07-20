@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@bg-color-code_555555;
+@nav-items-color-code_00aeff;
