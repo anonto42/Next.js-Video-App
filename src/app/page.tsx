@@ -1,12 +1,12 @@
+import NaveBer from '@/Components/NaveBer/NaveBer'
+import React from 'react'
 
-export default function Home() {
+const page = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex h-full bg-black text">
-        <h3 className="text-white">
-          hellow how are yoy
-        </h3>
-      </div>
-    </main>
-  );
+    <div className='w-full h-svh'>
+      <NaveBer />
+    </div>
+  )
 }
+
+export default page
