@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 @nav-items-color-code_00aeff;
+
+body,html::-webkit-scrollbar{
+    display: hidden;
+}
