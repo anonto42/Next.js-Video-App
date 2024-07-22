@@ -7,7 +7,11 @@ const page = () => {
         <div className='w-full h-full'>
           <div className="h-[35vh] w-full px-5">
             <div className='relative h-[60px] pt-5 mb-5'>
-              <div title='Click for return' className="border-[2px] absolute right-0 rounded-full w-[30px] h-[30px] cursor-pointer"></div>
+
+              <a href='/'>
+                <div title='Click for return' className="border-[2px] absolute right-0 rounded-full w-[30px] h-[30px] cursor-pointer"></div>
+              </a>
+
             </div>
             <div className='flex justify-center items-center'>
               <div>
@@ -26,7 +30,9 @@ const page = () => {
               </div>
               <div>
                 <h2 className='text-[10px] mt-3'><span className='underline text-[#272963]'>You don't have any account ?</span> <br /> Then Register </h2>
-                <button className='w-[100px] h-[40px] mt-3 rounded-[5px] bg-[#e101b1] active:scale-105 duration-100 shadow-md ease-in-out'>Register</button>
+                <a href="/register">
+                  <button className='w-[100px] h-[40px] mt-3 rounded-[5px] bg-[#e101b1] active:scale-105 duration-100 shadow-md ease-in-out'>Register</button>
+                </a>
               </div>
             </div>
           </div>
