@@ -1,6 +1,8 @@
 import React from 'react'
 import Layout from '../video/Layout'
 import NoVideo from '@/Components/Profile_your_video/NoVideo'
+import Videos from '@/Components/Profile_your_video/Videos'
+import { videoRef } from '../../../data_backend'
 
 const page = () => {
   return (
@@ -33,11 +35,13 @@ const page = () => {
                 </div>
                 <div className="w-full min-h-[500px] lg:border-l-2 lg:border-r-2 lg:rounded-lg border-t-2 border-b-2 border-[#00aeff] my-5 relative">
                     {/* add video */}
-                    <div title='Click to add video' className="absolute w-[50px] h-[50px] bg-[#00aeff] rounded-full right-5 top-5 active:scale-105 duration-75 ease-linear cursor-pointer">
-                        <p className='flex justify-center text-center text-[30px] text-white mt-1 shadow-md shadow-black bg-transparent'>+</p>
+                    <div title='Click to add video' className="absolute w-[50px] h-[50px] bg-[#00aeff] rounded-full right-5 top-5 active:scale-105 duration-75 ease-linear cursor-pointer z-10">
+                        <div className='flex justify-center text-center text-[30px] text-white mt-1 shadow-md shadow-black bg-transparent'>+</div>
                     </div>
                     {/* video's option */}
-                        <NoVideo />
+                    {
+                        !videoRef ? <NoVideo /> : <Videos videoUrl={videoRef} />
+                    }
                 </div>
             </div>
         </div>

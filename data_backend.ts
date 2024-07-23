@@ -141,7 +141,11 @@ const comments : any = [
     },
 ];
 
-
+const dataForInnerVideo = [
+    {
+        "videoUrl" : "/video/01.mp4"
+    }
+]
 
 
 
