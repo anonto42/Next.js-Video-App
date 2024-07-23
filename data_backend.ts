@@ -23,7 +23,7 @@ const videoRef : any = [
     },{
         "title" : "Marin dive rode",
         "shortDescription": "Every one injoying there tripe",
-        "videoUrl" : "/video/02.mp4",
+        "videoUrl" : "/video/2.mp4",
         "view" : "2M",
         "createdBy" : "sajim",
         "subs" : "subs"
@@ -93,14 +93,14 @@ const videoRef : any = [
     },{
         "title" : "beach...............",
         "shortDescription": "weather.....................",
-        "videoUrl" : "/video/12.mp4",
+        "videoUrl" : "/video/11.mp4",
         "view" : "20k",
         "createdBy" : "anonto",
         "subs" : "subs"
     },{
         "title" : "Have a nice ride in train",
         "shortDescription": "every one wass injoing there ride",
-        "videoUrl" : "/video/13.mp4",
+        "videoUrl" : "/video/3.mp4",
         "view" : "30k",
         "createdBy" : "sajim",
         "subs" : "subs"
