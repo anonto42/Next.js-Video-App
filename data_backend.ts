@@ -2,14 +2,14 @@ const videoRef : any = [
     {
         "title" : "Coxe Bazar beach",
         "shortDescription": "all friend are available in weather demand",
-        "videoUrl" : "/video/1.mp4",
+        "videoUrl" : "/video/1mp4",
         "view" : "230k",
         "createdBy" : "anonto",
         "subs" : "subs"
     },{
         "title" : "sanmartin beach",
         "shortDescription": "beouty full weather",
-        "videoUrl" : "/video/01.mp4",
+        "videoUrl" : "/video/01mp4",
         "view" : "20k",
         "createdBy" : "rusafi",
         "subs" : "subs"
