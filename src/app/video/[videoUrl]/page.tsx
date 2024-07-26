@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Layout from '../Layout'
 import Comment from '@/Components/Comment/Comment'
@@ -5,14 +7,17 @@ import { videoRef , comments } from '../../../../data_backend'
 import MiniVideoCart from '@/Components/Video/MiniVideoCart'
 
 
-const page = () => {
+const page = ({videoUrl}: any) => {
+
+    console.log(videoUrl);
+    
   return (
     <Layout>
         <div className='w-full min-h-svh flex justify-center'>
             <div className='w-full h-full p-4 max-w-[1200px] lg:flex'>
                 <div className='w-full h-full'>
                     {/* video section */}
-                    <video src={`/video/01.mp4`} controls className='w-full h-[280px] sm:h-[300px] md:h-[330px] lg:w-[600px] bg-[black] rounded-xl shadow-xl' />
+                    <video src={`/video/${videoUrl}.mp4`} controls className='w-full h-[280px] sm:h-[300px] md:h-[330px] lg:w-[600px] bg-[black] rounded-xl shadow-xl' />
                     <div className='w-full h-[80px] overflow-hidden bg-[#00aeff] mt-3 rounded-xl shadow-lg flex lg:w-[600px]'>
                         <div className='w-[50%] h-full bg-[#00000000] flex justify-start items-center pl-4'>
                             {/* like */}

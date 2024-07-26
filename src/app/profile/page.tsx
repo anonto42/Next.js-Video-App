@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Layout from '../video/Layout'
 import NoVideo from '@/Components/Profile_your_video/NoVideo'

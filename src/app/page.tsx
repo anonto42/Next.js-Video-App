@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import Footer from '@/Components/Footer/Footer';
 import VideoCart from '@/Components/Video/VideoCart';

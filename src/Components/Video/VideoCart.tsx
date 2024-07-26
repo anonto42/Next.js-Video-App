@@ -1,15 +1,17 @@
+'use client'
+
+import { useSearchParams } from 'next/navigation'
+
 import React from 'react'
 
 const VideoCart = ( { videoInfo } : any ) => {
 
-  const {title,  shortDescription , videoUrl , view  } : any = videoInfo; 
-
-  // console.log(videoInfo.title);
-
+  const { title ,  shortDescription , videoUrl , view  } : any = videoInfo; 
+  console.log(useSearchParams());
   return (
-    <a href={videoUrl} className='w-full lg:h-[260px] xl:h-[280px] md:w-[95%] lg:w-[97%] md:h-[220px] sm:h-[270px] h-[230px] bg-[black] relative rounded-xl md:mr-0 mr-5 mb-4 shadow-lg overflow-hidden'>
+    <a href={`/video/${videoUrl}`} className='w-full lg:h-[260px] xl:h-[280px] md:w-[95%] lg:w-[97%] md:h-[220px] sm:h-[270px] h-[230px] bg-[black] relative rounded-xl md:mr-0 mr-5 mb-4 shadow-lg overflow-hidden'>
       {/* video sorce */}
-        <video src={videoUrl} className='h-auto w-full'/>
+        <video src={`/video/${videoUrl}.mp4`} className='h-auto w-full'/>
         {/* text ariya */}
         <div className='w-full h-[80px] bottom-0 text-white absolote absolute flex'>
             <div className='w-[80%] h-full pt-6 pl-4'>
